@@ -20,8 +20,8 @@ function loadScores() {
   const savedHomeScore = localStorage.getItem("homeScore");
   const savedGuestScore = localStorage.getItem("guestScore");
 
-  home.textContent = savedHomeScore !== 0 ? savedHomeScore : 0;
-  guest.textContent = savedGuestScore !== 0 ? savedGuestScore : 0;
+  home.textContent = savedHomeScore !== null ? savedHomeScore : 0;
+  guest.textContent = savedGuestScore !== null ? savedGuestScore : 0;
 }
 
 loadScores();
