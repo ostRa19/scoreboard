@@ -59,3 +59,39 @@ button:active {
 div {
   text-align: center;
 }
+
+.theme-switcher {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+}
+
+/* light theme */
+.light-theme {
+  background-color: #f4f4f4;
+  color: black;
+}
+
+.light-theme #homeOutput,
+.light-theme #guestOutput {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.light-theme button {
+  background-color: #28a745;
+}
+
+.light-theme button:hover {
+  background-color: #218838;
+}
+
+.history {
+  margin-top: 20px;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}

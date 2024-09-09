@@ -2,22 +2,34 @@
   <head>
     <link rel="stylesheet" href="index.css" />
   </head>
-  <body>
+  <body class="dark-theme">
+    <div class="theme-switcher">
+      <button id="toggle-theme"><span id="theme-icon">🌙</span></button>
+    </div>
+    <div class="game-reset">
+      <button id="reset">Start New Game</button>
+    </div>
     <div class="container">
       <div>
         <h3>HOME</h3>
         <h1 id="homeOutput"></h1>
-        <button onclick="addOneHome()">+1</button>
-        <button onclick="addTwoHome()">+2</button>
-        <button onclick="addThreeHome()">+3</button>
+        <button onclick="addHomePoints(1)">+1</button>
+        <button onclick="addHomePoints(2)">+2</button>
+        <button onclick="addHomePoints(3)">+3</button>
       </div>
       <div>
         <h3>Away</h3>
         <h1 id="guestOutput"></h1>
-        <button onclick="addOneGuest()">+1</button>
-        <button onclick="addTwoGuest()">+2</button>
-        <button onclick="addThreeGuest()">+3</button>
+        <button onclick="addGuestPoints(1)">+1</button>
+        <button onclick="addGuestPoints(2)">+2</button>
+        <button onclick="addGuestPoints(3)">+3</button>
       </div>
+    </div>
+
+    <div class="history">
+      <h3>Game History</h3>
+      <ul id="gameHistory"></ul>
+      <!-- Список для отображения истории игр -->
     </div>
     <script src="index.js"></script>
   </body>
